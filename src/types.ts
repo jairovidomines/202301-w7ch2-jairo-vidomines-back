@@ -12,7 +12,7 @@ export interface RobotStructure {
 }
 
 export interface UserCredentials {
-  username: string;
+  nickname: string;
   password: string;
 }
 
@@ -24,4 +24,11 @@ export interface CustomRequest extends Request {
 
 export interface CustomJwtPayload extends JwtPayload {
   sub: string;
+}
+
+export interface UserStructure {
+  email: string;
+  nickname: string;
+  password: string;
+  avatar: string;
 }
